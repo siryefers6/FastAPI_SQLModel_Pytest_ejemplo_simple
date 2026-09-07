@@ -1,30 +1,6 @@
 Ejemplo base de partida FastAPI + SQLModel + Pytest
 
-## Tratar de tener una estructura de ficheros como:
-
-app/
-├── __init__.py
-├── main.py
-├── database.py
-├── models.py
-├── api/
-│   ├── __init__.py
-│   └── heroes.py
-├── web/
-│   ├── __init__.py
-│   └── heroes.py
-├── templates/
-│   ├── base.html
-│   └── heroes/
-│       ├── list.html
-│       └── detail.html
-└── tests/
-    ├── __init__.py
-    └── test_heroes.py
-
 ## Separar main:
-No. **No necesitas una carpeta `schemas/` en este proyecto**, al menos por ahora.
-
 Con SQLModel puedes mantener los modelos de base de datos y los modelos de entrada/salida juntos en `models.py`. Para tu CRUD actual es lo más simple.
 
 Yo lo dejaría así:
